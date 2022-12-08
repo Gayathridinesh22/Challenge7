@@ -1,0 +1,213 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e1e1e1;
+}
+
+nav {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(#033747,#012733);
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+    nav .logo p {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav li {
+        list-style: none;
+    }
+
+        nav li a {
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 0px 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+.content-items img {
+    width: 100%;
+    height: auto;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*.social-container {
+    position: relative;
+    bottom: 0px;
+    left: 5px;
+    width: 100%;
+    text-align: center;
+}*/
+
+.social-container ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    .social-container ul li {
+        list-style: none;
+    }
+
+        .social-container ul li a img {
+            width: 20px;
+        }
+
+.footer {
+    text-align: end;
+    position: relative;
+    right: 5px;
+}
+
+.social-container ul li a img {
+    width: 35px;
+}
+
+.food-search input[type="search"] {
+    width: 600px;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 35px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: rgb(0, 0, 0);
+    color: rgb(185, 185, 185);
+}
+
+.food-search input:focus {
+    outline: none;
+}
+
+.foodMenu-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 10px;
+}
+
+    .foodMenu-container .food-menu-box {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+
+        .foodMenu-container .food-menu-box .food-menu-img {
+            height: 100%;
+        }
+
+            .foodMenu-container .food-menu-box .food-menu-img img {
+                height: 100%;
+                max-width: 80px;
+            }
+
+@media only screen and (max-width: 700px) {
+    nav {
+        padding: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+        nav .logo p {
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        nav li a {
+            font-size: 10px;
+            text-transform: uppercase;
+            padding: 0px 5px;
+            color: white;
+            text-decoration: none;
+        }
+}
+
+@media only screen and (max-width: 400px) {
+    nav {
+        padding: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+        nav .logo p {
+            font-size: 12px;
+            margin-left: 20px;
+        }
+
+        nav li a {
+            font-size: 8px;
+            text-transform: uppercase;
+            padding: 0px 5px;
+            color: white;
+            text-decoration: none;
+        }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .social-container ul li a img {
+        width: 25px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .food-search input[type="search"] {
+        width: 400px;
+    }
+}
+
+.food-search input[type="submit"] {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 530px) {
+    .food-search input[type="search"] {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .food-search input[type="submit"] {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .foodMenu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .foodMenu-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
